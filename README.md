@@ -152,6 +152,7 @@ export const wenceslas: Developer = {
 **Une alternance en IA générative à proposer ? Ouvrons un canal.**
 
 <a href="https://wenceslas-bouity.ovh"><img src="https://img.shields.io/badge/→_wenceslas--bouity.ovh-2564CF?style=for-the-badge&logo=googlechrome&logoColor=ffffff" alt="Portfolio" /></a>
+<a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/"><img src="https://img.shields.io/badge/LINKEDIN-Wenceslas_Jude_Bouity-8764B8?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0A0E1A" alt="LinkedIn" /></a>
 <a href="mailto:judebouity19@gmail.com"><img src="https://img.shields.io/badge/EMAIL-judebouity19%40gmail.com-00B7C3?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0A0E1A" alt="Email" /></a>
 
 <br /><br />
