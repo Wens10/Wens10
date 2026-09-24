@@ -20,27 +20,42 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      # ghaction-github-pages@v4 still targets Node 20; GitHub forces Node 24
-      # from 2026-06-16 — opt in early so breakage surfaces in CI, not silently.
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # Generate cards locally with the repository token; no shared image API or PAT.
-      # A failed generation leaves the previously published images intact.
-      - name: Generate GitHub stats card
+      # Palette alignée sur wenceslas-bouity.ovh : #0A0E1A / #F6F7FB, #2564CF, #00B7C3, #8764B8
+      - name: Generate GitHub stats card (dark)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0a0908&title_color=f2a33c&icon_color=ff3d2e&text_color=e8e3da&rank_icon=github&disable_animations=true
-          path: dist/github-stats.svg
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&icon_color=2564CF&text_color=F3F6FB&ring_color=00B7C3&rank_icon=github&disable_animations=true
+          path: dist/github-stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
 
-      - name: Generate top languages card
+      - name: Generate GitHub stats card (light)
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&icon_color=00B7C3&text_color=1B1F2A&ring_color=2564CF&rank_icon=github&disable_animations=true
+          path: dist/github-stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate top languages card (dark)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=0a0908&title_color=f2a33c&text_color=e8e3da&langs_count=10&disable_animations=true
-          path: dist/top-languages.svg
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&text_color=F3F6FB&langs_count=10&disable_animations=true
+          path: dist/top-languages-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate top languages card (light)
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&text_color=1B1F2A&langs_count=10&disable_animations=true
+          path: dist/top-languages-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
 
@@ -49,8 +64,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#ff3d2e&color_dots=#ebedf0,#ffd9a0,#f2a33c,#ff3d2e,#b91c0f
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff3d2e&color_dots=#161b22,#7a4a1d,#b3702a,#f2a33c,#ffd07a
+            dist/github-snake.svg?color_snake=#8764B8&color_dots=#EEF1F7,#B9CDF0,#6F9BE0,#2564CF,#00B7C3
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00B7C3&color_dots=#151B28,#1B3566,#2564CF,#5B8FE8,#8764B8
 
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v4
