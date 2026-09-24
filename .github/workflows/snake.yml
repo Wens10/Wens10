@@ -22,12 +22,12 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # Palette alignée sur wenceslas-bouity.ovh : #0A0E1A / #F6F7FB, #2564CF, #00B7C3, #8764B8
+      # Palette alignÃ©e sur wenceslas-bouity.ovh : #0A0E1A / #F6F7FB, #2564CF, #00B7C3, #8764B8
       - name: Generate GitHub stats card (dark)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&icon_color=2564CF&text_color=F3F6FB&ring_color=00B7C3&rank_icon=github&disable_animations=true
+          options: username=${{ github.repository_owner }}&custom_title=SYSTEM.METRICS%20%2F%2F%20WENS10&show_icons=true&include_all_commits=true&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&icon_color=2564CF&text_color=F3F6FB&ring_color=00B7C3&rank_icon=github&disable_animations=true
           path: dist/github-stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
@@ -36,7 +36,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&icon_color=00B7C3&text_color=1B1F2A&ring_color=2564CF&rank_icon=github&disable_animations=true
+          options: username=${{ github.repository_owner }}&custom_title=SYSTEM.METRICS%20%2F%2F%20WENS10&show_icons=true&include_all_commits=true&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&icon_color=00B7C3&text_color=1B1F2A&ring_color=2564CF&rank_icon=github&disable_animations=true
           path: dist/github-stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
@@ -45,7 +45,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&text_color=F3F6FB&langs_count=10&disable_animations=true
+          options: username=${{ github.repository_owner }}&custom_title=LANGUAGES.LOADED&layout=compact&hide_border=true&bg_color=135,0A0E1A,151B28&title_color=00B7C3&text_color=F3F6FB&langs_count=10&disable_animations=true
           path: dist/top-languages-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
@@ -54,7 +54,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&text_color=1B1F2A&langs_count=10&disable_animations=true
+          options: username=${{ github.repository_owner }}&custom_title=LANGUAGES.LOADED&layout=compact&hide_border=false&border_color=E2E6EF&bg_color=135,FFFFFF,EEF1F7&title_color=2564CF&text_color=1B1F2A&langs_count=10&disable_animations=true
           path: dist/top-languages-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
