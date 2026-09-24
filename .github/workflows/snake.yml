@@ -22,7 +22,7 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # Palette alignÃ©e sur wenceslas-bouity.ovh : #0A0E1A / #F6F7FB, #2564CF, #00B7C3, #8764B8
+      # Palette alignée sur wenceslas-bouity.ovh : #0A0E1A / #F6F7FB, #2564CF, #00B7C3, #8764B8
       - name: Generate GitHub stats card (dark)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
