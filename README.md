@@ -10,7 +10,7 @@
 
 <a href="https://wenceslas-bouity.ovh"><img src="https://img.shields.io/badge/PORTFOLIO-wenceslas--bouity.ovh-2564CF?style=for-the-badge&logo=googlechrome&logoColor=ffffff&labelColor=0A0E1A" alt="Portfolio — wenceslas-bouity.ovh" /></a>
 <a href="https://github.com/Wens10?tab=followers"><img src="https://img.shields.io/github/followers/Wens10?style=for-the-badge&logo=github&label=FOLLOW&color=00B7C3&labelColor=0A0E1A" alt="GitHub followers" /></a>
-<a href="https://www.linkedin.com/search/results/all/?keywords=Wenceslas%20Jude%20Bouity"><img src="https://img.shields.io/badge/LINKEDIN-Wenceslas_Jude_Bouity-8764B8?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0A0E1A" alt="LinkedIn — Wenceslas Jude Bouity" /></a>
+<a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/"><img src="https://img.shields.io/badge/LINKEDIN-Wenceslas_Jude_Bouity-8764B8?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0A0E1A" alt="LinkedIn — Wenceslas Jude Bouity" /></a>
 <img src="https://komarev.com/ghpvc/?username=Wens10&style=for-the-badge&color=2564CF&label=VISITES&labelColor=0A0E1A" alt="Visites du profil" />
 
 </div>
