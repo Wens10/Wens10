@@ -36,7 +36,7 @@ export const wenceslas: Developer = {
 } as const;
 ```
 
-> **Mission :** intégrer les LLM dans des outils concrets pour les métiers. Après un **BTS SIO option SLAM** et des expériences en développement full stack, administration système et support de production, je construis des **assistants, des agents IA et des automatisations**.
+> **Mission :** intégrer les LLM dans des outils concrets pour les métiers. Après un **BTS SIO option SLAM** et des expériences en développement full stack, administration système et support de production, j'étudie à **l'ECE Paris** et je construis des **assistants, des agents IA et des automatisations**.
 >
 > **→ Parcours complet et projets : [wenceslas-bouity.ovh](https://wenceslas-bouity.ovh)**
 
